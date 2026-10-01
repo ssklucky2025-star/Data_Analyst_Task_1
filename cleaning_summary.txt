@@ -1,0 +1,46 @@
+DATA CLEANING SUMMARY
+
+Dataset:
+Customer Personality Analysis
+
+Task:
+Data Cleaning and Preprocessing
+
+Cleaning steps performed:
+
+1. Missing Values
+- Checked missing values using Pandas.
+- The Income column had 24 missing values.
+- Missing Income values were filled using the median.
+- Median Income used: 51381.5
+- After cleaning, Income has 0 missing values.
+
+2. Duplicate Records
+- Checked the dataset for duplicate rows.
+- Duplicate rows found: 0
+- Final duplicate rows: 0
+
+3. Text Standardization
+- Inspected text columns such as Education and Marital_Status.
+- Removed unnecessary leading/trailing spaces.
+
+4. Date Formatting
+- Converted Dt_Customer into a proper datetime data type.
+- Invalid date values were handled using errors="coerce".
+
+5. Column Names
+- Standardized column names using lowercase format.
+- Spaces were replaced with underscores.
+
+6. Outlier Checking
+- Checked Income for potential outliers using the IQR method.
+- Outliers were identified for investigation rather than blindly deleted.
+
+7. Final Dataset
+- Final rows: 2240
+- Final columns: 29
+- Duplicate rows after cleaning: 0
+
+Output:
+The cleaned dataset was exported as:
+cleaned_data/marketing_campaign_cleaned.csv
